@@ -3,9 +3,8 @@ html{font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat; background-size: cover; */
 }
 .wrapper{
-    background-image: url(Images/bryan-goff-galaxy-unsplash.jpg);
-    background-repeat: no-repeat; 
-    background-size:cover;
+    background-image: linear-gradient(black,#1b0148);
+    background-attachment: fixed;
 }
 #header{ width: 100%;
     height: 350px;    
@@ -84,11 +83,8 @@ nav{background-color: #22025a;
     width: 400px;
     height: 300px;
     transition: .5s ease;
-    backface-visibility: hidden;
-   
-  }
-  
-
+    backface-visibility: hidden; 
+}
   .middle {
     transition: .5s ease;
     opacity: 0;
@@ -119,44 +115,78 @@ nav{background-color: #22025a;
     font-size: 16px;
     padding: 16px 32px;
   }
+  .containerText {
+    position: relative;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 5px;
+    background-color: rgba(24, 12, 56, 0.578);
+    color: white;
+    padding-left: 20px;
+    padding-right: 75%;
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
 footer{background-color: #0a203b; 
     color: #fafcfd;
     }
 .gallery{display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-justify-content: space-around;
+    justify-content: space-around;
+    gap: 1em;
 }
 .info{padding-left: 150px;
     padding-right: 150px;
 }
-#infopic{max-width: 450px;
-    max-height: 460px;
+.infopic{max-width: 350px;
+    max-height: 360px;
 }
 figure{border: solid 20px #22025a;
     display: flex;
     flex-flow: column;
     margin: auto;
-    max-width: 450px ;
+    max-width: 350px;
 }
 figcaption{background-color: #22025a;
     color: #fafcfd;
     padding-top: 1em;
     font-size: small;
+    font-weight: bold;
    text-align: center;
 }
-#figcaption{ text-indent: 25px;
+#phase{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+}
+#textlink{
+    color: #22025a;
+    font-weight: bold;
+}
+.figcaption{ text-indent: 25px;
     text-align: justify;
     font-size: smaller;
+    font-weight: lighter;
 }
 .infoimage{max-width: 275px;
-max-height: 275px;
-border: 10px solid transparent;
-border-image-source: url(Images/andy-holmes-unsplash.jpg);
-border-image-slice: 4 ;
+    max-height: 275px;
+    border: 10px solid transparent;
+    border-image-source: url(Images/andy-holmes-unsplash.jpg);
+    border-image-slice: 4 ;
 }
-*{box-sizing: border-box;
+*{ box-sizing: border-box;
 }
+#list{ border-spacing: 2vh; 
+    background-color: black;
+    tr{border-spacing: 0;}
+    td{border-spacing: 0;}
+}
+#spaceshow{background-image:linear-gradient(black,rgb(16, 15, 19) ) ;
+}
+
 @media (max-width: 1280px){
     nav{max-width: 100%;
         height: auto; 
